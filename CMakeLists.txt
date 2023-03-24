@@ -21,5 +21,5 @@ target_include_directories(cloud-doba2000 PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} inc
 find_package(GLUT REQUIRED)
 find_package(OpenGL REQUIRED)
 target_include_directories(cloud-doba2000 PUBLIC ${OPENGL_INCLUDE_DIRS}  ${GLUT_INCLUDE_DIRS} )
-target_link_libraries(cloud-doba2000 PUBLIC ${OPENGL_LIBRARIES} )
-target_link_options(cloud-doba2000 PUBLIC -framework GLUT)
+target_link_libraries(cloud-doba2000 PUBLIC ${OPENGL_LIBRARIES} GLUT::GLUT)
+#target_link_options(cloud-doba2000 PUBLIC -framework GLUT)
